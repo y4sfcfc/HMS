@@ -8,9 +8,9 @@ namespace HospitalManagementSystem
             {
                 Console.Write("Xestenin tam adini daxil edin:");
                 string patientFullName = Console.ReadLine();
-                Dictionary<string, int> kanTahlili = BloodTestModule.GetBloodTest();
+                Dictionary<string, int> bloodTest = BloodTestModule.GetBloodTest();
 
-                BloodTestModule.DoBloodTest(kanTahlili,patientFullName);
+                BloodTestModule.DoBloodTest(bloodTest,patientFullName);
 
             }
         }
